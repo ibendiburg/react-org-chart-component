@@ -1,4 +1,4 @@
-# Solution Technical Assesment - Xactly Corp
+# UI Engineer Technical Assesment
 
 This is a solution to the Challenge of building a reusable component based on a problem description. With the making of this project I have been able to practice my React skill, how to display information Recursively as well as to how to write a JSON file and Display its information as a Tree Node. Overall pretty exciting and fun challenge.
 
