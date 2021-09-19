@@ -52,7 +52,7 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 ### Links
 
 - Solution URL: [Solution URL](https://github.com/ibendiburg/react-org-chart-component)
-- Live Site URL: [Live site URL](https://front-end-mentor-challenge2-solution.vercel.app/) [MUST COMPLETE]
+- Live Site URL: [Live site URL](https://react-org-chart-component.netlify.app/)
 
 ## My process
 
