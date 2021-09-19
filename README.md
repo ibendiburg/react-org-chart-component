@@ -40,7 +40,9 @@ In order to Launch this project use the following script inside the folder direc
 It will launch the app in a Localhost Enviroment.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+### Initial Design Idea
 
+![](/screenshot/guideIdea.png)
 
 
 ### Screenshots
