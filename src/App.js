@@ -1,5 +1,5 @@
 import React from "react";
-import Chart from "./chart";
+import Chart from "./components/chart";
 import "./styles.css";
 
 import "./styles.css"

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Fragment  } from 'react';
-import data from './data.json'
+import data from '../data.json'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faExclamationTriangle, faExclamationCircle, faThumbsUp } from "@fortawesome/free-solid-svg-icons"
 
@@ -30,11 +30,11 @@ const Card = (props) => {
     const setIcon = (condition) => {
         let status = setStatus(condition)
         if (status === "Normal") {
-            return <span className="icon green"><FontAwesomeIcon icon={faThumbsUp} size="3x"/></span>
+            return <span className="icon green"><FontAwesomeIcon icon={faThumbsUp} size="2x"/></span>
         } if (status === "Warning") {
-            return <span className="icon yellow" style={{animation: "glow 1s infinite alternate;"}}><FontAwesomeIcon icon={faExclamationTriangle} size="3x"/> </span>
+            return <span className="icon yellow"><FontAwesomeIcon icon={faExclamationTriangle} size="2x"/> </span>
         } if (status === "Critical") {
-            return <span className="icon red"><FontAwesomeIcon icon={faExclamationCircle} size="3x"/></span>
+            return <span className="icon red"><FontAwesomeIcon icon={faExclamationCircle} size="2x"/></span>
         }
     }
 
@@ -50,16 +50,16 @@ const Card = (props) => {
 return (
     <ul>
         {props.data.map((item) => (
-            <Fragment key={item.name}>
+            <Fragment key={item.id}>
                 <li>
                     <div className ="card">
-                        <div clasName="card-wrapper">
+                        <div className="card-wrapper">
                             <div className="card-header">
-                                <h1>{checkForSalesRep(item.name)}</h1>
+                                <h2>{checkForSalesRep(item.name)}</h2>
                             </div>
                             <div className="card-content">
                                 <div className="card-info">
-                                    <h2>{item.region}</h2>
+                                    <h3>{item.region}</h3>
                                 </div>
                                 <div className="status-icon">
                                     {setIcon(item.status)}
@@ -79,7 +79,6 @@ return (
 };
 
 const Chart = () => {
-
     return (
         <div className="org-tree">
             <Card data={data}/>

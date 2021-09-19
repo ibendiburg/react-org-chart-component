@@ -1,64 +1,79 @@
 [{
+    "id": "0",
     "name": "VP Sales",
     "status": "CRIT",
     "region": "Global",
     "children": [{
+        "id": "1",
         "name": "Sales Manager",
         "region": "North America",
         "status": "NORM",
         "children": [{
+            "id": "3",
             "name": "Sales Lead",
             "region": "Canada",
             "status": "WARN",
             "children": [{
+                "id": "8",
                 "name": "Sales Rep.",
                 "region": "Toronto",
                 "status": "NORM"
             },{
+                "id": "9",
                 "name": "Sales Rep.",
                 "region": "Vancouver",
                 "status": "NORM"
             }]
         },{
+            "id": "4",
             "name": "Sales Lead",
             "status": "CRIT",
             "region": "USA",
             "children": [{
+                "id": "10",
                 "name": "Sales Rep.",
                 "region": "New York",
                 "status": "WARN"
             },{
+                "id": "11",
                 "name": "Sales Rep.",
                 "region": "Dallas",
                 "status": "CRIT"
             },{
+                "id": "12",
                 "name": "Sales Rep.",
                 "region": "Los Angeles",
                 "status": "CRIT"
             }]
         }]
     },{
+        "id": "2",
         "name": "Sales Manager",
         "region": "Europe",
         "status": "WARN",
         "children": [{
+            "id": "5",
             "name": "Sales Lead",
             "region": "Germany",
             "status": "WARN",
             "children": [{
+                "id": "13",
                 "name": "Sales Rep.",
                 "region": "Berlin",
                 "status": "NORM"
             },{
+                "id": "14",
                 "name": "Sales Rep.",
                 "region": "Frankfurt",
                 "status": "CRIT"
             }]
         },{
+            "id": "7",
             "name": "Sales Lead",
             "region": "Italy",
             "status": "NORM",
             "children": [{
+                "id": "15",
                 "name": "Sales Rep.",
                 "region": "Milan",
                 "status": "NORM"
