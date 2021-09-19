@@ -1,0 +1,68 @@
+[{
+    "name": "VP Sales",
+    "status": "CRIT",
+    "region": "Global",
+    "children": [{
+        "name": "Sales Manager",
+        "region": "North America",
+        "status": "NORM",
+        "children": [{
+            "name": "Sales Lead",
+            "region": "Canada",
+            "status": "WARN",
+            "children": [{
+                "name": "Sales Rep.",
+                "region": "Toronto",
+                "status": "NORM"
+            },{
+                "name": "Sales Rep.",
+                "region": "Vancouver",
+                "status": "NORM"
+            }]
+        },{
+            "name": "Sales Lead",
+            "status": "CRIT",
+            "region": "USA",
+            "children": [{
+                "name": "Sales Rep.",
+                "region": "New York",
+                "status": "WARN"
+            },{
+                "name": "Sales Rep.",
+                "region": "Dallas",
+                "status": "CRIT"
+            },{
+                "name": "Sales Rep.",
+                "region": "Los Angeles",
+                "status": "CRIT"
+            }]
+        }]
+    },{
+        "name": "Sales Manager",
+        "region": "Europe",
+        "status": "WARN",
+        "children": [{
+            "name": "Sales Lead",
+            "region": "Germany",
+            "status": "WARN",
+            "children": [{
+                "name": "Sales Rep.",
+                "region": "Berlin",
+                "status": "NORM"
+            },{
+                "name": "Sales Rep.",
+                "region": "Frankfurt",
+                "status": "CRIT"
+            }]
+        },{
+            "name": "Sales Lead",
+            "region": "Italy",
+            "status": "NORM",
+            "children": [{
+                "name": "Sales Rep.",
+                "region": "Milan",
+                "status": "NORM"
+            }]
+        }]
+    }]
+}]
